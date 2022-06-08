@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brave Ukraine</title>
+    <style>
+      div {
+        max-width: 600px;
+        margin: 0 auto;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(118, 190, 232) 0%,
+          #ffee63 90%
+        );
+        padding: 40px;
+        border-radius: 10px;
+      }
+
+      h1,
+      h2 {
+        font-family: e-ukraine;
+        text-align: center;
+        color: white;
+      }
+
+      h1 {
+        font-size: 56px;
+        margin: 0;
+      }
+
+      h2 {
+        margin: 0 0 40px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      a {
+        font-family: e-ukraine;
+        font-size: smaller;
+        text-align: center;
+        text-decoration: none;
+        color: blue;
+      }
+
+      button {
+        font-family: e-ukraine;
+        display: block;
+        margin: 20px auto;
+        background: #0aa1dd;
+        color: white;
+        font-size: 16px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .em-quote,
+      .brave-quote {
+        margin: 30px auto 40px;
+        max-width: 200px;
+      }
+      .em-quote {
+        font-size: smaller;
+      }
+
+      .read-more {
+        margin: 0 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>BRAVERY</h1>
+      <h2>TO BE UKRAINE</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/635/original/8sub_en_copy.jpg?1654683782"
+      />
+      <p class="em-quote">
+        <em>
+          You can't buy bravery. <br />
+          You can't take it away. <br />
+          It's a gift from your parents.
+        </em>
+      </p>
+      <p class="brave-quote">
+        When the war started, <br />
+        the world gave us three days. <br />
+        We gave the world a chance to see what Ukrainian bravery is.
+        <br />
+        <br />
+        Ukrainians have become the bravest nation in the world. Now they quote
+        us, look up to us, get inspired, and give us a standing ovation. Not
+        only politicians and governments, but also common people.
+        <br />
+        <br />
+        Today all humanity knows <br />
+        that bravery is to be Ukraine.
+      </p>
+      <p class="read-more">
+        <a href="https://brave.ua/en.html" target="_blank">Read on brave.ua</a>
+      </p>
+      <button>I want to help Ukrainians</button>
+    </div>
+
+    <script>
+      function helpUkranians() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        if (name.length > 0) {
+          alert(
+            `Thanks for your interest, ${name}! We'll give you the information how to help Ukrainians 💙💛`
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", helpUkranians);
+    </script>
+  </body>
+</html>
